@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(56, 56, 56);
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+.header-bar {
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.blocker {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    display: block;
+}
+
+.header-logo {
+    border-right: 1px solid black;
+}
+
+.header-obj {
+    font-size: 16pt;
+    font-weight: bold;
+    color: black;
+    padding: 8px;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.bodyarea {
+    width: 100%;
+    height: 100%;
+    padding: 6px;
+}
+
+/* RANKS */
+
+.dis-Owner {
+    color: rgb(225, 52, 87);
+}
+.dis-Admin {
+    color: rgb(169, 103, 103);
+}
+.dis-Member {
+    color: rgb(0, 164, 0);
+}
+.dis-Non {
+    color: rgb(137, 137, 137);
+}
+.dis-Fake {
+    color: rgb(164, 82, 46);
+}
+.disC-Og {
+    color: rgb(206, 34, 0);
+}
+.disC-Vip {
+    color: rgb(45, 202, 45);
+}
+.disC-Mvp {
+    color: rgb(106, 175, 202);
+}
+.disC-MvpPlus {
+    color: rgb(218, 185, 0);
+}
+
+
+.dis-Owner::after {
+    content: " ✔";
+}
+.dis-Admin::after {
+    content: " 	✓";
+}
+.dis-Member::after {
+    content: "";
+}
+.dis-Non::after {
+    content: "";
+}
+.dis-Fake::after {
+    content: "";
+}
+.disC-Og::after {
+    content: " ✪";
+}
+.disC-Vip::after {
+    content: " ✪";
+}
+.disC-Mvp::after {
+    content: " ✪";
+}
+.disC-MvpPlus::after {
+    content: " ✪";
+}
+
+
+
+.dis-Owner, .dis-Admin, .dis-Member, .dis-Non, .dis-Fake, .disC-Og, .disC-Vip, .disC-Mvp, .disC-MvpPlus {
+    font-weight: 800;
+}

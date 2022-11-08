@@ -1,0 +1,55 @@
+.section {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    width: 95%;
+    padding: 0;
+    display: flex;
+}
+.section-header {
+    background-color: rgb(23, 23, 23);
+    padding: 50px;
+    margin: 0;
+    border-right: 1px solid white;
+    width: 15%;
+
+    transition: ease-in-out 500ms width, ease-in-out 500ms background-color;
+}
+
+.section-header:hover {
+    width: 20%;
+    background-color: rgb(76, 76, 76);
+}
+
+.section:hover .section-header {
+    width: 20%;
+    background-color: rgb(76, 76, 76);
+}
+.section-links {
+    color: white;
+    display: flex;
+    padding: 7px;
+    flex-direction: column;
+}
+a {
+    color: white;
+    text-decoration: underline;
+    padding: 3px;
+    background-color: transparent;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: black;
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
+input:active {
+    background-color: rgb(19, 19, 19);
+}

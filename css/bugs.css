@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+    border-left: 1px solid white;
+    background-color: rgb(56, 56, 56);
+}
+
+*::-webkit-scrollbar-button {
+    background-color: rgb(104, 104, 104);
+    border-left: 1px solid white;
+}
+
+/* Style the tab */
+.tabs {
+    float: left;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(56, 56, 56);
+    width: 30%;
+    height: 85vh;
+    overflow-y: scroll;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+    display: block;
+    background-color: inherit;
+    color: rgb(255, 255, 255);
+    padding: 3px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.227);
+    border-top: 1px solid rgba(255, 255, 255, 0.227);
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+    background-color: rgb(36, 36, 36);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+/* Create an active/current "tab button" class */
+.tabs button.active {
+    background-color: rgb(36, 36, 36);
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 70%;
+    border-left: none;
+    height: 85vh;
+    overflow-y: scroll;
+    hyphens: auto;
+}
+
+/* ************************************************************** */
+
+.bug-Unresolved::after {
+    content: "*";
+    color: rgb(0, 132, 255);
+    -webkit-text-stroke: 0.2px white;
+}
+
+.bug-Unresolved-Never::after {
+    content: "*";
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 0.2px white;
+}
+
+/* ********************************************************** */
+
+table {
+    background-color: rgb(73, 73, 73);
+    padding: 5px;
+    border: 1px solid white;
+}
+
+td {
+    padding: 3px;
+    background-color: rgb(93, 93, 93);
+}
