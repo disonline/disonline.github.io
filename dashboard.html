@@ -11,6 +11,37 @@
     <script defer src="js/dashboard.js"></script>
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/prohibit.css">
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("November 16 2022 10:32:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdownObject"
+            document.getElementById("countdownObject").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdownObject").innerHTML = "haha you got trolled";
+            }
+        }, 1000);
+    </script>
 </head>
 <body>
     <div id="blocker" class="blocker"><img style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" src="media/loading.gif" draggable="false"></div>
@@ -23,19 +54,23 @@
             0 DP
         </div>
     </div>
+    
     <div class="bodyarea">
         <h1 id="greeting">Hello, Seth</h1>
         <div class="section">
-            <h2 class="section-header">News</h2>
+            <h2 class="section-header">Wait...</h2>
             <div class="section-links">
-                
+                <br>
+                <h1><span id="countdownObject"></span></h1>
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">Information</h2>
+            <h2 class="section-header">News</h2>
             <div class="section-links">
                 <ul>
                     <li>New ROBLOX group! Check link in Help section.</li>
+                    <li>New website link. <a href="#">https://disonline.github.io</a></li>
+                    <li>New website font.</li>
                 </ul>
             </div>
         </div>

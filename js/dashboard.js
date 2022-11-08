@@ -1,7 +1,5 @@
 const dataBaseInfo = `
 <a href="ranks.html">Ranks [20/09/2022]</a>
-<a href="database.html?dbfile=sethinfo_19092022">SethInfo.xlsx [19/09/2022]</a>
-<a href="database.html?dbfile=sethinfo_20092022">SethInfo.xlsx [20/09/2022]</a>
 <a href="database.html?dbfile=members_21092022">Members.accdb [21/09/2022]</a>
 `;
 
