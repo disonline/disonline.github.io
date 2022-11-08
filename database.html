@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiSWeb Database View</title>
+    <script defer src="js/prohibit.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/database.js"></script>
+    <link rel="stylesheet" href="css/prohibit.css">
+    
+</head>
+<body>
+    <div id="blocker" class="blocker"><img style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" src="media/loading.gif" draggable="false"></div>
+    <div class="header-bar">
+        <img src="media/logo.png" draggable="false" class="header-logo">
+        <div class="header-obj" onclick="localStorage.disLoginName = ''; localStorage.disLoginDisplayName = 'Seth'; window.location.href='index.html';">
+            logout
+        </div>
+        <div class="header-obj" onclick="window.location.href='dashboard.html';">
+            dashboard
+        </div>
+    </div>
+    <div class="bodyarea">
+        <img src="" id="page1">
+        <img src="" id="page2">
+    </div>
+</body>
+</html>

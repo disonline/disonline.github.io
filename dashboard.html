@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiSWeb Dashboard</title>
+    <script defer src="js/prohibit.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/dashboard.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/prohibit.css">
+</head>
+<body>
+    <div id="blocker" class="blocker"><img style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);" src="media/loading.gif" draggable="false"></div>
+    <div class="header-bar">
+        <img src="media/logo.png" draggable="false" class="header-logo">
+        <div class="header-obj" onclick="localStorage.clear(); window.location.href='index.html';">
+            logout
+        </div>
+        <div class="header-obj" id="dparea">
+            0 DP
+        </div>
+    </div>
+    <div class="bodyarea">
+        <h1 id="greeting">Hello, Seth</h1>
+        <div class="section">
+            <h2 class="section-header">News</h2>
+            <div class="section-links">
+                
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Information</h2>
+            <div class="section-links">
+                <ul>
+                    <li>New ROBLOX group! Check link in Help section.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Databases</h2>
+            <div class="section-links" id="conf_DB">
+                <a href="dashboard.html?showDb=1">Click here to show Databases.</a>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Videos</h2>
+            <div class="section-links">
+                <a href="video.html?vfile=rickroll">Never Gonna Give You Up</a>
+                <a href="video.html?vfile=smtpe">Beep Beep</a>
+                <a href="video.html?vfile=sweaty-gamer">Sweaty Gamer</a>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">DP Request</h2>
+            <div class="section-links">
+                <form action="https://formsubmit.co/25f1fe166526385812d26294be09dc35" target="_blank" method="POST">
+                    <label for="target-user">Who would you like to give dolphin points?</label><br><input name="target-user" id="target-user" placeholder="username"><br>
+                    <label for="amount">How many dolphin points would you like to give?</label><br><input name="amount" id="amount" placeholder="number"><br>
+                    <label for="reason">Why do you want to give dolphin points?</label><br><input name="reason" id="reason" placeholder="reason"><br><br>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-header">Help</h2>
+            <div class="section-links">
+                <a href="mailto:lj180601@gmail.com">Contact</a>
+                <a href="https://web.roblox.com/groups/16100192/DolphinsInSwitzerland#!/about">Roblox Group</a>
+                <a href="#">DiS/DiSDG Skype Chat</a>
+                <a href="chat.php">Online Chat</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

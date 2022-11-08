@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiSWeb Login</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/login.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="header-bar">
+        <img src="media/logo.png" draggable="false" class="header-logo">
+        <div class="header-obj" onclick="window.location.href='index.html';">
+            home
+        </div>
+    </div>
+    <div class="bodyarea">
+        <div class="loginForm">
+            <h1>Login</h1>
+            username&nbsp;&nbsp;<input type="text" id="usernameField" placeholder="username"><br>
+            <br>
+            password&nbsp;&nbsp;<input type="password" id="passwordField" placeholder="password"><br>
+            <br>
+            <span id="question">Type in your correct username.</span><br>
+            <input type="text" id="questionField" placeholder="answer"><br>
+            <br>
+            <button onclick="login();">Login</button><br>
+            <span id="errorBox" style="color: rgb(255, 131, 131); font-size: 10pt;"></span>
+        </div>
+    </div>
+</body>
+</html>
