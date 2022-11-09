@@ -15,11 +15,11 @@ const passwords = {
 const displayNames = {
     SEPO: "<span class='dis-Non'>Seth</span>",
     infinityatom: "<span class='dis-Owner'>Leonard</span>",
-    Ronstar5623: "<span class='dis-Admin'>Ronan</span>",
+    Ronstar5623: "<span class='dis-Admin disC-Vip'>Ronan</span>",
     Hype: "<span class='dis-Owner'>Seb</span>",
     Deathsnake: "<span class='dis-Member'>Nayab</span>",
     Grass: "<span class='dis-Member'>Ethan</span>",
-    SUSshrek: "<span class='dis-Member'>Sam</span>"
+    SUSshrek: "<span class='dis-Admin'>Sam</span>"
 };
 const verifyQuestions = {
     SEPO: "Will you shut up?",
