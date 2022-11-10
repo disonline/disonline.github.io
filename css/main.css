@@ -84,30 +84,13 @@ body {
 .dis-Admin::after {
     content: " 	✓";
 }
-.dis-Member::after {
-    content: "";
-}
-.dis-Non::after {
-    content: "";
-}
-.dis-Fake::after {
-    content: "";
-}
-.disC-Og::after {
-    content: " ✪";
-}
-.disC-Vip::after {
-    content: " ✪";
-}
-.disC-Mvp::after {
-    content: " ✪";
-}
-.disC-MvpPlus::after {
-    content: " ✪";
-}
 
 
 
 .dis-Owner, .dis-Admin, .dis-Member, .dis-Non, .dis-Fake, .disC-Og, .disC-Vip, .disC-Mvp, .disC-MvpPlus {
     font-weight: 800;
+}
+
+.material-symbols-rounded {
+    vertical-align: middle;
 }

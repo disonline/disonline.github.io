@@ -31,13 +31,13 @@
     padding: 7px;
     flex-direction: column;
 }
-a {
+a:not(.ignore-href) {
     color: white;
     text-decoration: underline;
     padding: 3px;
     background-color: transparent;
 }
-a:hover {
+a:hover:not(.ignore-href) {
     color: rgb(0, 0, 0);
     background-color: white;
 }
@@ -53,3 +53,4 @@ input {
 input:active {
     background-color: rgb(19, 19, 19);
 }
+

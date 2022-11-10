@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <script defer src="js/login.js"></script>
     <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
 </head>
 <body>
     <div class="header-bar">
@@ -20,11 +22,13 @@
     <div class="bodyarea">
         <div class="loginForm">
             <h1>Login</h1>
-            username&nbsp;&nbsp;<input type="text" id="usernameField" placeholder="username"><br>
+            <span class="material-symbols-rounded">drive_file_rename_outline</span>username<br>
+            <input type="text" id="usernameField" placeholder="username"><br>
             <br>
-            password&nbsp;&nbsp;<input type="password" id="passwordField" placeholder="password"><br>
-            <span style="font-size: 2px;">Username: #Portal2</span><br>
-            <span id="question">Type in your correct username.</span><br>
+            <span class="material-symbols-rounded">dialpad</span>password<br>
+            <input type="password" id="passwordField" placeholder="password"><br>
+            <br>
+            <span class="material-symbols-rounded">help</span><span id="question">Type in your correct username.</span><br>
             <input type="text" id="questionField" placeholder="answer"><br>
             <br>
             <button onclick="login();">Login</button><br>

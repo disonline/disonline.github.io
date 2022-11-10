@@ -4,7 +4,6 @@ const questionBox = document.getElementById("questionField");
 const errorSpan = document.getElementById("errorBox");
 const question = document.getElementById("question");
 const passwords = {
-    SEPO: "fe6417512b3f9583c92b02ab321b24687d943445a77198a7db44ef9dec3d3f2c",
     infinityatom: "7666197a246dded3b8238775f3cedf8350a2858a8117e744a703987dd55aa497",
     Ronstar5623: "ae38668e13d3f9e53d4a1d2442111bbd8b72a4a7e7bdcdfb1f2d3a110d3519da",
     Hype: "c32f5de8269a9aced9a2a66afe8d228052211b0008b80b6993811ce29496bc91",
@@ -13,7 +12,6 @@ const passwords = {
     SUSshrek: "74f8b7d77f4884900bfbe6221f8d7d1d2436acb6919d935088c846a5f5c4314c"
 };
 const displayNames = {
-    SEPO: "<span class='dis-Non'>Seth</span>",
     infinityatom: "<span class='dis-Owner'>Leonard</span>",
     Ronstar5623: "<span class='dis-Admin disC-Vip'>Ronan</span>",
     Hype: "<span class='dis-Owner'>Seb</span>",
@@ -22,7 +20,6 @@ const displayNames = {
     SUSshrek: "<span class='dis-Admin'>Sam</span>"
 };
 const verifyQuestions = {
-    SEPO: "Will you shut up?",
     infinityatom: "What is your middle name?",
     Ronstar5623: "What is your dad's middle name?",
     Hype: "What is your middle name?",
@@ -31,7 +28,6 @@ const verifyQuestions = {
     SUSshrek: "What is your middle name?"
 };
 const verifyQuestionAnswers = {
-    SEPO: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855", // nothing, hack his account plz
     infinityatom: "95fb1e05dbabd20a4ea5440cdc0ea6d46cbbd26dcf54da9782f4240c68712b02",
     Ronstar5623: "b5fd03dd91df1cfbd2f19c115d24d58bbda01a23fb01924bb78b2cc14f7ff1cb",
     Hype: "5d422d0acb34b8c10ed55cc2809937c8226538ec1729f5cade99449c597b30e4",
@@ -40,7 +36,6 @@ const verifyQuestionAnswers = {
     SUSshrek: "5bf95072052324fb12fd3eb1d75881e86c5d266ac2d59e0c84895c6469c0ae16"
 };
 const suspensionStatus = { // use $AccountPR$ to remove account
-    SEPO: "$AccountPR$",
     infinityatom: "!",
     Ronstar5623: "!",
     Hype: "!",
@@ -49,7 +44,6 @@ const suspensionStatus = { // use $AccountPR$ to remove account
     SUSshrek: "!"
 }
 const dolphinPoints = {
-    SEPO: "-32767",
     infinityatom: "∞",
     Ronstar5623: "14",
     Hype: "∞",

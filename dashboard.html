@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/prohibit.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("November 16 2022 10:32:00").getTime();
@@ -51,23 +53,28 @@
             logout
         </div>
         <div class="header-obj" id="dparea">
-            0 DP
+            <span class="material-symbols-rounded">monetization_on</span>0
         </div>
+        <div class="header-obj">
+            <span class="material-symbols-rounded">build</span>v3.4
+        </div>
+        
     </div>
     
     <div class="bodyarea">
         <h1 id="greeting">Hello, Seth</h1>
         <div class="section">
-            <h2 class="section-header">Wait...</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">timer</span>Wait...</h2>
             <div class="section-links">
                 <br>
                 <h1><span id="countdownObject"></span></h1>
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">News</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">feed</span>News</h2>
             <div class="section-links">
                 <ul>
+                    <li>Added NEW VIDEO! Go to video section and "Fire Alarm"</li>
                     <li>New ROBLOX group! Check link in Help section.</li>
                     <li>New website link. <a href="#">https://disonline.github.io</a></li>
                     <li>New website font.</li>
@@ -76,21 +83,22 @@
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">Databases</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">database</span>Databases</h2>
             <div class="section-links" id="conf_DB">
                 <a href="dashboard.html?showDb=1">Click here to show Databases.</a>
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">Videos</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">videocam</span>Videos</h2>
             <div class="section-links">
+                <a href="video.html?vfile=firealarm">Fire Alarm</a>
                 <a href="video.html?vfile=rickroll">Never Gonna Give You Up</a>
                 <a href="video.html?vfile=smtpe">Beep Beep</a>
                 <a href="video.html?vfile=sweaty-gamer">Sweaty Gamer</a>
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">DP Request</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">monetization_on</span>DPRequest</h2>
             <div class="section-links">
                 <form action="https://formsubmit.co/25f1fe166526385812d26294be09dc35" target="_blank" method="POST">
                     <label for="target-user">Who would you like to give dolphin points?</label><br><input name="target-user" id="target-user" placeholder="username"><br>
@@ -102,7 +110,7 @@
             </div>
         </div>
         <div class="section">
-            <h2 class="section-header">Help</h2>
+            <h2 class="section-header"><span class="material-symbols-rounded">help</span>Help</h2>
             <div class="section-links">
                 <a href="mailto:lj180601@gmail.com">Contact</a>
                 <a href="https://web.roblox.com/groups/16100192/DolphinsInSwitzerland#!/about">Roblox Group</a>

@@ -5,7 +5,7 @@ const dataBaseInfo = `
 
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("greeting").innerHTML = "Hello, " + localStorage.disLoginDisplayName;
-    document.getElementById("dparea").textContent = localStorage.disPoints + " DP";
+    document.getElementById("dparea").innerHTML = `<span class="material-symbols-rounded">monetization_on</span>${localStorage.disPoints}`
     if(getParameterByName("showDb") == "1") {
         document.getElementById("conf_DB").innerHTML = dataBaseInfo;
     }
