@@ -4,11 +4,7 @@
 
 .video-container {
     position: relative;
-    width: 90%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    margin-inline: auto;
+    max-width: 700px;
     background-color: black;
 }
   
@@ -112,8 +108,13 @@ align-items: center;
 width: 0;
 transform-origin: left;
 transform: scaleX(0);
+appearance: none;
+background-color: white;
+accent-color: red;
+border-radius: 5px;
+height: 5px;
 transition: width 150ms ease-in-out, transform 150ms ease-in-out;
-}  
+}
 .volume-container:hover .volume-slider,
 .volume-slider:focus-within {
 width: 100px;

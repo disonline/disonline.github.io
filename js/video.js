@@ -1,6 +1,41 @@
+const videoData = {
+  videosAllowed: ["firealarm", "rickroll", "smtpe", "sweaty_gamer"],
+  data: {
+    firealarm: {
+      title:
+      "3 Minutes of a Fire Alarm",
+      description:
+      "Three minutes of a fire alarm.<br>Voice Lines: \"Emergency, evacuate the building\""
+    },
+    rickroll: {
+      title:
+      "Rick Astley - Never Gonna Give You Up",
+      description:
+      "The rickroll song by Rick Astley.<br><br>Lyrics:<br>We're no strangers to love<br>You know the rules and so do I (do I)<br>A full commitment's what I'm thinking of<br>You wouldn't get this from any other guy<br>I just wanna tell you how I'm feeling<br>Gotta make you understand<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>We've known each other for so long<br>Your heart's been aching, but you're too shy to say it (say it)<br>Inside, we both know what's been going on (going on)<br>We know the game and we're gonna play it<br>And if you ask me how I'm feeling<br>Don't tell me you're too blind to see<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>We've known each other for so long<br>Your heart's been aching, but you're too shy to say it (to say it)<br>Inside, we both know what's been going on (going on)<br>We know the game and we're gonna play it<br>I just wanna tell you how I'm feeling<br>Gotta make you understand<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you<br>Never gonna give you up<br>Never gonna let you down<br>Never gonna run around and desert you<br>Never gonna make you cry<br>Never gonna say goodbye<br>Never gonna tell a lie and hurt you"
+    },
+    smtpe: {
+      title:
+      "SMTPE Bars",
+      description:
+      "1 second of SMTPE bars."
+    },
+    sweaty_gamer: {
+      title:
+      "Sweaty Gamer Meme",
+      description:
+      "Sweat."
+    },
+  }
+};
+
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("blocker").style.display = "none";
-    document.getElementById("videoSource").src = "media/video/" + getParameterByName("vfile") + ".mp4";
+    if(videoData.videosAllowed.includes(getParameterByName("vfile"))) {
+        document.getElementById("videoSource").src = "media/video/" + getParameterByName("vfile") + ".mp4";
+        document.getElementById("disVideoTitle").innerHTML = videoData.data[getParameterByName("vfile")].title;
+        document.getElementById("disVideoDesc").innerHTML = videoData.data[getParameterByName("vfile")].description;
+    } else {
+        document.location.href = "/dashboard.html";
+    }
     
 });
 
@@ -14,7 +49,6 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 const playPauseBtn = document.querySelector(".play-pause-btn")
-const theaterBtn = document.querySelector(".theater-btn")
 const fullScreenBtn = document.querySelector(".full-screen-btn")
 const miniPlayerBtn = document.querySelector(".mini-player-btn")
 const muteBtn = document.querySelector(".mute-btn")
@@ -42,9 +76,6 @@ document.addEventListener("keydown", e => {
       break
     case "f":
       toggleFullScreenMode()
-      break
-    case "t":
-      toggleTheaterMode()
       break
     case "i":
       toggleMiniPlayerMode()
@@ -186,13 +217,8 @@ video.addEventListener("volumechange", () => {
 })
 
 // View Modes
-theaterBtn.addEventListener("click", toggleTheaterMode)
 fullScreenBtn.addEventListener("click", toggleFullScreenMode)
 miniPlayerBtn.addEventListener("click", toggleMiniPlayerMode)
-
-function toggleTheaterMode() {
-  videoContainer.classList.toggle("theater")
-}
 
 function toggleFullScreenMode() {
   if (document.fullscreenElement == null) {
